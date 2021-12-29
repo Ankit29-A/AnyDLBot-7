@@ -97,8 +97,8 @@ async def rename_doc(bot, update):
             logger.info(the_real_download_location)
             thumb_image_path = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id) + ".jpg"
             if not os.path.exists(thumb_image_path):
-                logger.info('setting thumb.jpg as thumbnail')
-                thumb_image_path = "thumb.jpg"
+                logger.info('')
+                thumb_image_path = ""
             else:
                 width = 0
                 height = 0
