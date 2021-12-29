@@ -121,7 +121,6 @@ async def rename_doc(bot, update):
             await bot.send_document(
                 chat_id=update.chat.id,
                 document=new_file_name,
-                thumb=thumb_image_path,
                 caption=caption_str,
                 # reply_markup=reply_markup,
                 reply_to_message_id=update.reply_to_message.message_id,
